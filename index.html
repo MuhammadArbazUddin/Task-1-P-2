@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes floatUp {
+      from {
+        transform: translateY(0);
+      }
+      to {
+        transform: translateY(-20px);
+      }
+    }
+  </style>
+  <body>
+    <div
+      style="
+        background-image: url('https://media-public.canva.com/43xhE/MAEnjk43xhE/1/s2.jpg');
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+        height: 500px;
+        position: relative;
+      "
+    >
+      <div
+        style="
+          background-image: url('https://media-public.canva.com/v_-SU/MAEJ-Zv_-SU/1/s.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 500px;
+          height: 500px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        "
+      >
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <h1
+            style="
+              text-transform: uppercase;
+              color: white;
+              font-weight: 800;
+              font-size: 76px;
+              font-family: 'Titillium Web', serif;
+              margin: 0;
+            "
+          >
+            Metaverse
+          </h1>
+          <h1
+            style="
+              letter-spacing: 20px;
+              font-weight: 400;
+              line-height: 40px;
+              text-transform: uppercase;
+              color: white;
+              font-size: 26px;
+              font-family: 'Titillium Web', serif;
+              margin: 0;
+            "
+          >
+            Expansion
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div
+      style="
+        background-color: black;
+        width: 50%;
+        height: 500px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        overflow: hidden;
+        background-image: radial-gradient(
+            circle,
+            rgba(255, 255, 255, 0.1) 10%,
+            transparent 50%
+          ),
+          linear-gradient(45deg, #111 25%, transparent 25%),
+          linear-gradient(-45deg, #111 25%, transparent 25%),
+          linear-gradient(45deg, transparent 75%, #111 75%),
+          linear-gradient(-45deg, transparent 75%, #111 75%);
+        background-size: 80px 80px;
+      "
+    >
+      <div
+        style="
+          position: absolute;
+          width: 120%;
+          height: 120%;
+          background: radial-gradient(
+            circle,
+            rgba(0, 136, 255, 0.2) 10%,
+            transparent 50%
+          );
+          filter: blur(80px);
+          z-index: 0;
+        "
+      ></div>
+
+      <div
+        style="
+          position: relative;
+          z-index: 2;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        "
+      >
+        <h1
+          style="
+            text-transform: uppercase;
+            color: white;
+            font-weight: 800;
+            line-height: 70px;
+            font-size: 76px;
+            font-family: 'Titillium Web', sans-serif;
+            margin: 0;
+            text-shadow: 0 0 15px rgba(0, 255, 255, 0.8),
+              0 0 30px rgba(0, 136, 255, 0.6), 0 0 45px rgba(0, 136, 255, 0.4);
+            letter-spacing: 5px;
+            animation: fadeIn 1.5s ease-in-out;
+          "
+        >
+          Artificial Intelligence?
+        </h1>
+
+        <h2
+          style="
+            letter-spacing: 5px;
+            font-weight: 400;
+            line-height: 40px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 24px;
+            font-family: 'Titillium Web', sans-serif;
+            margin-top: 10px;
+            backdrop-filter: blur(5px);
+            padding: 5px 15px;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.1);
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            animation: fadeIn 2s ease-in-out;
+          "
+        >
+          Presented by Arbaz
+        </h2>
+      </div>
+
+      <div
+        style="
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          pointer-events: none;
+        "
+      >
+        <div
+          style="
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: rgba(0, 255, 255, 0.8);
+            border-radius: 50%;
+            top: 10%;
+            left: 20%;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+            animation: floatUp 5s infinite ease-in-out alternate;
+          "
+        ></div>
+
+        <div
+          style="
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 50%;
+            top: 70%;
+            left: 80%;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+            animation: floatUp 6s infinite ease-in-out alternate-reverse;
+          "
+        ></div>
+      </div>
+    </div>
+  </body>
+</html>
